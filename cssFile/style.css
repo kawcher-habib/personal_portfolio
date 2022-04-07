@@ -19,7 +19,7 @@ button {
   margin: auto;
   -webkit-box-shadow: 0px 1px 1px #8080802e;
           box-shadow: 0px 1px 1px #8080802e;
-  padding: 3px;
+  padding: 8px;
 }
 
 .container > .banner-area {
@@ -156,8 +156,7 @@ button {
 }
 
 .container > .nav-area > .nav-details > .text-side > h2,
-.container > .nav-area > .nav-details > .text-side h1,
-.container > .nav-area > .nav-details > .text-side p {
+.container > .nav-area > .nav-details > .text-side h1 {
   letter-spacing: 2.5px;
 }
 
@@ -173,7 +172,12 @@ button {
 }
 
 .container > .nav-area > .nav-details > .text-side > p {
-  line-height: 2rem;
+  line-height: 1.5rem;
+  letter-spacing: 2px;
+}
+
+.container > .nav-area > .nav-details > .text-side > p > span {
+  font-weight: bold;
 }
 
 .container > .nav-area > .nav-details > .text-side > button {
@@ -186,11 +190,6 @@ button {
   border: solid 1px #a3a2a2;
   -webkit-transition: 1s;
   transition: 1s;
-}
-
-.container > .nav-area > .nav-details > .text-side > button:hover {
-  color: white;
-  background-color: orange;
 }
 
 .container > .project-display-area {
@@ -246,7 +245,7 @@ button {
 }
 
 .container > .project-display-area > .card-area > .card:hover {
-  background-color: orange;
+  background-color: #a3a2a2;
 }
 
 .container > .social-media-area {
@@ -284,7 +283,7 @@ button {
   width: 320px;
   height: 90px;
   padding: 10px;
-  background-color: #313030d2;
+  background-color: #989aa8;
   border-radius: 4px;
   border: solid 1px gold;
   color: #ffffffd3;
@@ -302,14 +301,14 @@ button {
 }
 
 .container > .social-media-area > .social-media .social-media-content:hover {
-  background-color: orange;
-  cursor: pointer;
+  background-color: #ffa600bb;
 }
 
 .container > .social-media-area > .social-media .social-media-content:hover .icon-side a {
   text-decoration: none;
   color: #f0efefd7;
   font-size: 3rem;
+  cursor: pointer;
 }
 
 .container > footer {
@@ -344,21 +343,5 @@ button {
 
 .container > footer .content h6 {
   letter-spacing: 0.1rem;
-}
-
-@media screen and (min-width: 768px) {
-  .container > .banner-area {
-    padding: 0 10px;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .container > .banner-area {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
-    gap: 2px;
-  }
 }
 /*# sourceMappingURL=style.css.map */

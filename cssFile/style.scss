@@ -17,15 +17,12 @@ $text-font-family: "sans-serif";
     width: 1000px;
     margin: auto;
     box-shadow: 0px 1px 1px #8080802e;
-    padding: 3px;
+    padding: 8px;
     > .banner-area {
         width: 100%;
         display: flex;
         justify-content: space-evenly;
         align-items: center;
-
-        // background-image: url(../image/bgImage/biography-bg.png);
-        // background-size: cover;
         > .text-side {
             width: 50%;
             line-height: 3.5rem;
@@ -130,8 +127,7 @@ $text-font-family: "sans-serif";
             }
             > .text-side {
                 > h2,
-                h1,
-                p {
+                h1 {
                     letter-spacing: 2.5px;
                 }
                 > h3 {
@@ -144,7 +140,11 @@ $text-font-family: "sans-serif";
                     line-height: 3.5rem;
                 }
                 > p {
-                    line-height: 2rem;
+                    line-height: 1.5rem;
+                    letter-spacing: 2px;
+                    > span {
+                        font-weight: bold;
+                    }
                 }
                 > button {
                     padding: 10px;
@@ -155,10 +155,6 @@ $text-font-family: "sans-serif";
                     letter-spacing: 2px;
                     border: solid 1px #a3a2a2;
                     transition: 1s;
-                }
-                > button:hover {
-                    color: white;
-                    background-color: orange;
                 }
             }
         }
@@ -205,7 +201,7 @@ $text-font-family: "sans-serif";
                 }
             }
             > .card:hover {
-                background-color: orange;
+                background-color: #a3a2a2;
             }
         }
     }
@@ -230,7 +226,7 @@ $text-font-family: "sans-serif";
                 width: 320px;
                 height: 90px;
                 padding: 10px;
-                background-color: #313030d2;
+                background-color: #989aa8;
                 border-radius: 4px;
                 border: solid 1px gold;
                 color: #ffffffd3;
@@ -246,13 +242,14 @@ $text-font-family: "sans-serif";
                 }
             }
             .social-media-content:hover {
-                background-color: orange;
-                cursor: pointer;
+                background-color: #ffa600bb;
+
                 .icon-side {
                     a {
                         text-decoration: none;
                         color: #f0efefd7;
                         font-size: 3rem;
+                        cursor: pointer;
                     }
                 }
             }
@@ -286,19 +283,19 @@ $text-font-family: "sans-serif";
     }
 } //container end
 
-//Media query
-@media screen and (min-width: 768px) {
-    .container {
-        > .banner-area {
-            padding: 0 10px;
-        }
-    }
-}
-@media screen and (max-width: 768px) {
-    .container {
-        > .banner-area {
-            flex-direction: column-reverse;
-            gap: 2px;
-        }
-    }
-}
+// //Media query
+// @media screen and (min-width: 768px) {
+//     .container {
+//         > .banner-area {
+//             padding: 0 10px;
+//         }
+//     }
+// }
+// @media screen and (max-width: 768px) {
+//     .container {
+//         > .banner-area {
+//             flex-direction: column-reverse;
+//             gap: 2px;
+//         }
+//     }
+// }
