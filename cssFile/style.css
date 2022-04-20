@@ -241,11 +241,15 @@ button {
 .container > .project-display-area > .card-area > .card > button a {
   font-size: 15px;
   text-decoration: none;
-  color: #f8f9fc;
+  color: #dadfe4;
+}
+
+.container > .project-display-area > .card-area > .card > button a:hover {
+  color: white;
 }
 
 .container > .project-display-area > .card-area > .card:hover {
-  background-color: #a3a2a2;
+  background-color: #dfd9d9;
 }
 
 .container > .social-media-area {
@@ -283,7 +287,7 @@ button {
   width: 320px;
   height: 90px;
   padding: 10px;
-  background-color: #989aa8;
+  background-color: #5a5a5c;
   border-radius: 4px;
   border: solid 1px gold;
   color: #ffffffd3;
@@ -294,19 +298,26 @@ button {
 
 .container > .social-media-area > .social-media .social-media-content .icon-side a {
   text-decoration: none;
-  color: #d3d3d362;
+  color: #e6e1e162;
   font-size: 3rem;
   -webkit-transition: 1s;
   transition: 1s;
 }
 
 .container > .social-media-area > .social-media .social-media-content:hover {
-  background-color: #ffa600bb;
+  background-color: #e2e1e0bb;
+  border: none;
+}
+
+.container > .social-media-area > .social-media .social-media-content:hover .text-side,
+.container > .social-media-area > .social-media .social-media-content:hover h1,
+.container > .social-media-area > .social-media .social-media-content:hover h6 {
+  color: #6e6d6dd7;
 }
 
 .container > .social-media-area > .social-media .social-media-content:hover .icon-side a {
   text-decoration: none;
-  color: #f0efefd7;
+  color: #6e6d6dd7;
   font-size: 3rem;
   cursor: pointer;
 }
